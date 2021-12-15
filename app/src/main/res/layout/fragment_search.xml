@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/cal"
+        android:src="@drawable/calendar"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+
+        />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@drawable/edittextdesign"
+      android:hint="Select date"
+      android:paddingHorizontal="20sp"
+      android:layout_marginTop="50dp"
+      android:layout_marginHorizontal="80dp"
+      android:id="@+id/date"
+      />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/time"
+        android:src="@drawable/time"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/cal"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextdesign"
+        android:hint="Select date"
+        android:paddingHorizontal="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="80dp"
+        android:id="@+id/edittext_time"
+        android:layout_below="@id/date"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="60dp"
+        android:background="@color/black"
+        android:id="@+id/milli"
+        android:layout_below="@id/time"
+        android:text="Convert into MilliSecond"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextdesign"
+        android:hint="Enter Milli Second"
+        android:paddingHorizontal="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="80dp"
+        android:id="@+id/input_milli"
+        android:layout_below="@id/milli"
+        android:inputType="number"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="120dp"
+        android:id="@+id/convert"
+        android:layout_below="@id/input_milli"
+        android:text="Convert"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@color/black"
+        android:textColor="@color/white"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginStart="110dp"
+        android:id="@+id/Result"
+        android:layout_below="@id/convert"
+        android:text="Result here"
+        android:textSize="20sp"
+
+        />
+
+</RelativeLayout>
